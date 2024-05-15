@@ -18,7 +18,7 @@ const SignUp = () => {
             // new user has been created
             const createdAt = result.user?.metadata?.creationTime;
             const user = {email, createdAt:createdAt};
-            fetch('http://localhost:5000/user', {
+            fetch('https://coffee-store-server-p87xgz25f-nahids-projects-8af1d23b.vercel.app/user', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
